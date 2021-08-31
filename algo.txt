@@ -1,0 +1,31 @@
+ALGORITHM types
+VAR  
+ch : string :="" ;
+c : char;
+long :integer :=0;
+nbw :integer:=0;
+nbv :integer:=0;
+
+
+Begin
+
+repeat
+ 
+read(c)
+long := long+1;
+ch[long]:=c;
+
+if (c = " ") then 
+ nbw :=nbw +1 ;
+end_if;
+
+if (c in ("a", "e", "i", "o", "u", "y")  then 
+ nbv := nbv +1;
+ end_if;
+}
+until(read(c)) <>".")
+if (ch[l-1]<>" ")  then 
+ nbw := nbw +1 ;
+ end_if ;
+
+write ("length = " ,long," number of words = ",nbw," number of vowels = ",nbv)
